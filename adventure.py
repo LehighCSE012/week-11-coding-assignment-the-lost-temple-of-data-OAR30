@@ -13,7 +13,7 @@ def load_location_notes(tsv_filepath):
     return df
 
 def extract_journal_dates(journal_text):
-    pattern = r"\b\d{2}/\d{2}/\d{4}\b"
+    pattern = r"\b(0[1-9]|1[0-2])\d{2}/\d{2}/\d{4}\b"
     return re.findall(pattern, journal_text)
 
 def extract_secret_codes(journal_text):
