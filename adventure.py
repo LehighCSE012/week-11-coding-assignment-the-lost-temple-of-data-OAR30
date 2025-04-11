@@ -17,5 +17,5 @@ def extract_journal_dates(journal_text):
   return re.findall(pattern, journal_text)
 
 def extract_secret_codes(journal_text):
-  pattern = r""\bAZMAR-\d{3}\b"
+  pattern = r"\bAZMAR-\d{3}\b"
   return re.findall(pattern, journal_text)
