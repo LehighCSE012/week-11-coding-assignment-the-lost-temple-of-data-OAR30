@@ -1,8 +1,8 @@
 '''
 Week 11 Coding Assignment
 '''
-import pandas as pd
 import re
+import pandas as pd
 
 def load_artifact_data(excel_filepath):
     '''
@@ -23,7 +23,7 @@ def extract_journal_dates(journal_text):
     """
     Exctracts all dates in MM/DD/YYYY format
     """
-    pattern = r"\b(0[1-9]|1[0-2])/\d{2}\d{2}/\d{4}\b"
+    pattern = r"\b(0[1-9]|1[0-2])/\d{2}/\d{4}\b"
     return re.findall(pattern, journal_text)
 
 def extract_secret_codes(journal_text):
